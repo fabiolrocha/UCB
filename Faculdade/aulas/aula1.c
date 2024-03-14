@@ -7,13 +7,4 @@ main(void){
 
     printf("Informe seu nome:");
     scanf("", nome);
-
-
-
-
-
-
-
-
-
 }
