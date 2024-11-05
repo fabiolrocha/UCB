@@ -4,11 +4,13 @@ public class Bonificacao {
 
     private int planoSaude;
     private int valeAlimentacao;
+    private int diasExtras;
 
-    public Bonificacao(int planoSaude, int valeAlimentacao){
+    public Bonificacao(int planoSaude, int valeAlimentacao, int diasExtras){
         super();
         this.planoSaude = planoSaude;
         this.valeAlimentacao = valeAlimentacao;
+        this.diasExtras = diasExtras;
     }
 
     public int getPlanoSaude(){
@@ -27,21 +29,27 @@ public class Bonificacao {
         this.valeAlimentacao = valeAlimentacao;
     }
 
+    public int getDiasExtras(){
+        return planoSaude;
+    }
+
+    public void setDiasExtras(){
+        this.diasExtras = diasExtras;
+    }
+
+    public double calculoDiasExtras(){
+        return (diasExtras * 0.03);
+    }
+
     public double bonusBasico(){
-        planoSaude = 650;
-        valeAlimentacao = 800;
         return planoSaude + valeAlimentacao;
     }
 
     public double bonusIntermediario(){
-        planoSaude = 2500;
-        valeAlimentacao = 1500;
         return planoSaude + valeAlimentacao;
     }
 
     public double bonusAvancado(){
-        planoSaude = 5500;
-        valeAlimentacao = 3500;
         return planoSaude + valeAlimentacao;
     }
 

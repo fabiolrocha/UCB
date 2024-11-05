@@ -4,8 +4,8 @@ public class Diretor extends Bonificacao {
 
     private int salario;
 
-    public Diretor(int planoSaude, int valeAlimentacao, int salario) {
-        super(planoSaude, valeAlimentacao);
+    public Diretor(int planoSaude, int valeAlimentacao,int diasExtras, int salario) {
+        super(planoSaude, valeAlimentacao, diasExtras);
         this.salario = salario;
     }
 
@@ -18,9 +18,7 @@ public class Diretor extends Bonificacao {
     }
 
     public double salarioCompletoDiretor(){
-        salario = 15500;
-        return salario + bonusAvancado();
+        return salario * calculoDiasExtras() + salario + bonusAvancado();
     }
-
 
 }

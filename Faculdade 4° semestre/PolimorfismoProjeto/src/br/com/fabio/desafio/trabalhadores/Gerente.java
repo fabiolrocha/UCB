@@ -4,8 +4,8 @@ public class Gerente extends Bonificacao{
 
     private int salario;
 
-    public Gerente(int planoSaude, int valeAlimentacao, int salario) {
-        super(planoSaude, valeAlimentacao);
+    public Gerente(int planoSaude, int valeAlimentacao, int diasExtras, int salario) {
+        super(planoSaude, valeAlimentacao, diasExtras);
         this.salario = salario;
     }
 
@@ -18,7 +18,6 @@ public class Gerente extends Bonificacao{
     }
 
     public double salarioCompletoGerente(){
-        salario = 7500;
-        return salario + bonusIntermediario();
+        return salario * calculoDiasExtras() + salario + bonusIntermediario();
     }
 }
