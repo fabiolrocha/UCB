@@ -1,5 +1,6 @@
 package br.com.fabio.desafio.main;
 
+import br.com.fabio.desafio.formas.impl.Circulo;
 import br.com.fabio.desafio.formas.impl.Quadrado;
 import br.com.fabio.desafio.formas.impl.Retangulo;
 import br.com.fabio.desafio.formas.impl.Triangulo;
@@ -17,5 +18,8 @@ public class Main {
 
         Retangulo objRetangulo = new Retangulo(20, 40);
         objRetangulo.calcularArea();
+
+        Circulo objCirculo = new Circulo(4);
+        objCirculo.calcularArea();
     }
 }
