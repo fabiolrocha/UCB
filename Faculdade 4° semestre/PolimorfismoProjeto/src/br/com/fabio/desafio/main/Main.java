@@ -13,6 +13,6 @@ public class Main {
         System.out.println("O salário completo do Gerente é: " + objGerente.salarioCompletoGerente());
 
         Diretor objDiretor = new Diretor(5500,3500, 2,15500);
-        System.out.println("O salário completo do Gerente é: " + objDiretor.salarioCompletoDiretor());
+        System.out.println("O salário completo do Diretor é: " + objDiretor.salarioCompletoDiretor());
     }
 }

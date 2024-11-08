@@ -22,5 +22,14 @@ public class Main {
 
         System.out.println("O titular é: " + objContaBancaria.getTitular());
         System.out.println("O saldo após o deposito é: " + objContaBancaria.depositar());
+
+        System.out.println("=============================");
+
+        objContaBancaria.setTitular("Junior");
+        objContaBancaria.setSaldo(2200);
+
+        System.out.println("O novo titular é: " + objContaBancaria.getTitular());
+        System.out.println("O novo saldo é: " + objContaBancaria.getSaldo());
+
     }
 }
