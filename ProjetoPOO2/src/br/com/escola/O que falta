@@ -1,0 +1,7 @@
+= Herança e polimorfismo:
+- Polimorfismo, incrementar uma função em pessoa e passa-la para as outras classes e assim concluir o polimorfismo
+
+= Padroes do projeto:
+- Diagram pattern: Factory
+- Diagram pattern: Singleton
+- Diagram pattern: Observer
