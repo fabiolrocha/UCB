@@ -1,17 +1,16 @@
 package br.com.escola.pessoa;
 
-public class Pessoa {
 
+//Classe mãe de aluno e professor, ond delimita caracteristicas em como entre eles
+public abstract class Pessoa {
     private String nome;
     private int idade;
     private String endereco;
-    private int cpf;
 
-    public Pessoa(String nome, int cpf, String endereco, int idade) {
+    public Pessoa(String nome, int idade, String endereco) {
         this.nome = nome;
-        this.cpf = cpf;
-        this.endereco = endereco;
         this.idade = idade;
+        this.endereco = endereco;
     }
 
     public String getNome() {
@@ -37,15 +36,4 @@ public class Pessoa {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-
-    public int getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(int cpf) {
-        this.cpf = cpf;
-    }
-
-
-
 }
